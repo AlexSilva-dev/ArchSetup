@@ -8,6 +8,7 @@ pacotes=(
     # Hyprland
     "hyprlock"                  # Tela de bloqueio
     "hyprutils"                 # Utilitários
+    "rofi"                      # Lançador de aplicativos
 
     # Integração e drivers de vídeo
     "xdg-desktop-portal-hyprland" # Integra Hyprland com Flatpak e serviços de desktop.
@@ -21,9 +22,9 @@ pacotes=(
     "polkit-kde-agent" # Popup de pedir premissão de super usuario
     "hyprsysteminfo" # Apenas exibe informações do sistema
     "hyprland-qtutils-git" # Para exibir dialogs e popups
-    "wl-clip-persist" # Persistir historico de copias
+
     "zip" "tar"                   # Compactação e extração de arquivos (.zip, .tar).
-    "zsh"                         # Shell alternativo avançado.
+    "fish"                        # Shell avançado.
     "flatpak"                     # Gerenciador de pacotes Flatpak
     "arandr"                      # Configuração gráfica de monitores.
     "htop"                        # Monitor de recursos do sistema.
@@ -39,6 +40,14 @@ pacotes=(
     "virtualbox-host-dkms" # para virtualbox
     "virtualbox"
     "fuse" # Para ativar o AppImage
+    "v4l2loopback-dkms"
+    "linux-headers"
+    "network-manager-applet" # Interface para gerenciar conexões
+    "cliphist" "wl-clipboard" # Gerencia historicos de itens copiados
+    "tesseract-data-eng" # Extrai texto de imagens se usa com grim e slurp
+    "grim" "slurp" "satty" # Ferramentas para prints de tela
+    "reflector" # Atualizar o espelho/mirrors do pacman para melhor velocidade para baixar apps
+    "fwudp" # firmware
 
     # Desenvolvimento e compilação
     "make" "git" "base-devel"     # Ferramentas essenciais para desenvolvimento e compilação.
@@ -64,19 +73,29 @@ pacotes=(
     "kate"                        # Editor de texto avançado.
     "vivaldi"                     # Navegador web personalizável.
     "vlc"                         # Reprodutor multimídia versátil.
+    "obsidian"
 
     # Work
     "openvpn"                     # Cliente VPN para conexões seguras.
 
     # Customização
     "qt6ct" # para configurar no hyprland
-    "kvantum" # Interface para aplicar tema e custommizar
+    "kvantum" # Interface para aplicar tema e custommizar QT
+    "nwg-look" # Gerenciador de tema GTK
+
+    # Rede social
+    "telegram-desktop"
+
+    # Fontes
+    "ttf-dejavu"                  # Sem essa fonte deu erro na aplicação JVM usando KMP
 )
 
 # Lista de Flatpaks a serem instalados
 flatpaks=(
     "com.rtosta.zapzap"         #
-    "org.flameshot.Flameshot" # Prints
+    "com.github.dynobo.normcap" # Copiar texto da tela
+    "com.stremio.Stremio" # Ver filmes torrent
+    "org.onlyoffice.desktopeditors"
 )
 
 snaps=(
@@ -87,6 +106,11 @@ snaps=(
 
 # yay @todo
 # "hyprsome" # Usado para configurar o Hyprland para ter 10 workspace por monitor, cada monitor vai ter suas 10 workspaces
+# "hyprswitch" # Para fazer switch de telas usando super + tab por exemmplo
+# "wlogout"
+# "webapp-manager" # Para criar Web app aparti de paginas
+# "appimagepool-appimage" # Para gerenciar App Images criando atalhos no laucher
+# "pamac-aur-git" # Loja de apps
 
 ###
 ### PACMAN ###
